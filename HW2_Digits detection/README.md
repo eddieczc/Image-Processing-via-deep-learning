@@ -1,19 +1,18 @@
-# CS_T0828_HW1
-link：https://www.kaggle.com/c/cs-t0828-2020-hw1 <br>
-code for the fifth accuracy in Kaggle Car Brand Classification Challenge.
+# CS_T0828_HW2
+code for the fifth accuracy in Digits detection Classification Challenge. <br>
 
 ## Hardware
-● Windows 10 <br>
+● Ubuntu 20.04 <br>
 ● Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz <br>
 ● NVIDIA GeForce GTX 1080 Ti <br>
 
 ## Introduction and details
 There is the outlines in this compitions <br>
 1. [Installation](#Installation) <br>
-2. [dataloader](#dataloader) <br>
+2. [Getting labels](#dataloader) <br>
 3. [Model](#Model) <br>
-4. [Load-Model](#Load-Model) <br>
-5. [testing](#testing) <br>
+4. [Testing](#Load-Model) <br>
+5. [Organising Materials](#testing) <br>
 6. [Make-Submission](#Make-Submission)<br>
 
 ## Installation
@@ -24,11 +23,13 @@ Using Anaconda and pytorch to implement this method.
     conda install torchvision -c pytorch
 
 ## Dataloader
-Change the path which is in the `dataloader.py` and `main.py`.
-    
-    pd.read_csv('./training_labels.csv')
-    train_dataset = RetinopathyLoader('./training_data', 'train', augmentation=augmentation)
-Validation and testing data are ues the same method to load <br>
+Change the path which is in the `get_labels.py`.
+    f = h5py.File('./train/digitStruct.mat','r')
+    Image.open('./train/'+IMG_NAME)
+In order to get the ground truth. <br>
+
+![image]https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/labels.png
+
 
 ## Model
 Taking the pretrained model for desent121 <br>
