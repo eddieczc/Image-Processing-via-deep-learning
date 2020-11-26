@@ -72,7 +72,7 @@ Use this command line for training
 ## Testing
 Use this command line for testing. <br>
 
-`./darknet detector test [IOC.data] [yolov4_IOC_tiny.cfg] [yolov4_IOC_tiny_last.weights] [Image_path]`
+`./darknet detector test [IOC.data] [yolov4_IOC_tiny.cfg] [yolov4_IOC_tiny_last.weights] [Image_path]` <br>
     Loading weights from /home/naip/IOC/yolo_tiny/darknet/backup/yolov4_IOC_tiny_last.weights...
     seen 64, trained: 33718 K-images (526 Kilo-batches_64)
     Done! Loaded 38 layers from weights-file
@@ -81,7 +81,7 @@ Use this command line for testing. <br>
     /home/naip/IOC/yolo_tiny/darknet/data/IOC/test/1.png: Predicted in 240.240000 milli-seconds.
     5: 93%
 
-`./darknet detector test [IOC.data] [yolov4_IOC_tiny.cfg] [yolov4_IOC_tiny_last.weights] -ext_output -dont_show -out result.json [</test.txt]`
+`./darknet detector test [IOC.data] [yolov4_IOC_tiny.cfg] [yolov4_IOC_tiny_last.weights] -ext_output -dont_show -out result.json [</test.txt]` <br>
     /home/naip/IOC/yolo_tiny/darknet/data/IOC/test/13067.png: Predicted in 4.770000 milli-seconds.
     2: 52%  (left_x:  115   top_y:   14   width:   13   height:   18)
     2: 56%  (left_x:  125   top_y:   14   width:   12   height:   18)
