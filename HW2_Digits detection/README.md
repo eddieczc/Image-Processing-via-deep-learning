@@ -24,6 +24,7 @@ Using Anaconda and pytorch to implement this method.
 
 ## Dataloader
 Change the path which is in the `get_labels.py`.
+
     f = h5py.File('./train/digitStruct.mat','r')
     Image.open('./train/'+IMG_NAME)
 In order to get the ground truth. <br>
