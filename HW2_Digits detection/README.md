@@ -68,6 +68,27 @@ The training flowchart：
 ## Testing
 Using this code to do the testing. <br>
 
+
+    Loading weights from /home/naip/IOC/yolo_tiny/darknet/backup/yolov4_IOC_tiny_last.weights...
+    seen 64, trained: 33718 K-images (526 Kilo-batches_64)
+    Done! Loaded 38 layers from weights-file
+    Detection layer: 30 - type = 28
+    Detection layer: 37 - type = 28
+    /home/naip/IOC/yolo_tiny/darknet/data/IOC/test/1.png: Predicted in 240.240000 milli-seconds.
+    5: 93%
+
+
+    /home/naip/IOC/yolo_tiny/darknet/data/IOC/test/13067.png: Predicted in 4.770000 milli-seconds.
+    2: 52%  (left_x:  115   top_y:   14   width:   13   height:   18)
+    2: 56%  (left_x:  125   top_y:   14   width:   12   height:   18)
+    7: 71%  (left_x:  138   top_y:   14   width:   12   height:   17)
+    Enter Image Path:  Detection layer: 30 - type = 28
+     Detection layer: 37 - type = 28
+    /home/naip/IOC/yolo_tiny/darknet/data/IOC/test/13068.png: Predicted in 4.959000 milli-seconds.
+    6: 99%  (left_x:   35   top_y:    8   width:   11   height:   25)
+    7: 95%  (left_x:   47   top_y:    9   width:   10   height:   24)
+
+
 ## Organising Materials
 Input command to get the result form the test data by yolov4 model, the value of the bounding box is x_center, y_center, width and height. <br>
 So, I load the test image size to calculate the (y1, x1, y2, x2) as (top , left, right ,bottom) in order to get the mAP value. <br>
