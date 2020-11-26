@@ -60,7 +60,8 @@ The training flowchart：
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/path.png)
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/data.png)
 
-*Step 5.* After preparing all of the data, we need to create the .cfg file and start to train the model with the yolo [pretrained](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights "link"). <br>
+*Step 5.* After preparing all of the data, we need to create the .cfg file and start to train the model with the yolo [pretrained](https://github.com/AlexeyAB/darknet/releases/download/darknet_yolo_v3_optimal/yolov4.weights "link") model. <br>
+
 **Changed the filter value such as filters=(classes + 5)x3) and the class value.** <br>
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/model.png)
 
