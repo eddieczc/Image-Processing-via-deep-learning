@@ -24,8 +24,8 @@ Using Anaconda and pytorch to implement this method.
 
 ## Dataloader
 Change the path which is in the `get_labels.py`.
-        f = h5py.File('./train/digitStruct.mat','r')
-        Image.open('./train/'+IMG_NAME)
+    f = h5py.File('./train/digitStruct.mat','r')
+    Image.open('./train/'+IMG_NAME)
 In order to get the ground truth. <br>
 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/labels.png)
