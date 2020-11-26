@@ -107,5 +107,5 @@ So, I load the test image size to calculate the (y1, x1, y2, x2) as (top , left,
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/speed.png) <br> 
 
 ## Make-Submission
-Use the `create_josn.py` to get the final file. 
+Use the `create_josn.py` to get the final file. <br>
 Submit the file `StudentID.json`, to the google drive and  get the mPA scroe from TA. <br>
