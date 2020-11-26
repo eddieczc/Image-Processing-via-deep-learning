@@ -56,7 +56,8 @@ The training flowchart：
     
     make
     
-*Step 4.* Preparing the data : training data, ground truth label, and some data that the yolov4’s method needs. For example:.data and .names <br>
+*Step 4.* Preparing the data : training data, ground truth label, and some data that the yolov4’s method needs. You can get it by `create_path.py`.  
+For example: each image's path, .data and .names <br>
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/path.png)
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/data.png)
 
@@ -65,10 +66,13 @@ The training flowchart：
 **Changed the filter value such as filters=(classes + 5)x3) and the class value.** <br>
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/model.png)
 
+Use this command line for training
+    ./darknet detector train [IOC.data] [yolov4_IOC_tiny.cfg] [yolov4_IOC_tiny_last.weights]
+
 ## Testing
-Using this code to do the testing. <br>
+Use this command line for testing. <br>
 
-
+`./darknet detector test [IOC.data] [yolov4_IOC_tiny.cfg] [yolov4_IOC_tiny_last.weights] [Image_path]`
     Loading weights from /home/naip/IOC/yolo_tiny/darknet/backup/yolov4_IOC_tiny_last.weights...
     seen 64, trained: 33718 K-images (526 Kilo-batches_64)
     Done! Loaded 38 layers from weights-file
@@ -77,7 +81,7 @@ Using this code to do the testing. <br>
     /home/naip/IOC/yolo_tiny/darknet/data/IOC/test/1.png: Predicted in 240.240000 milli-seconds.
     5: 93%
 
-
+`./darknet detector test [IOC.data] [yolov4_IOC_tiny.cfg] [yolov4_IOC_tiny_last.weights] -ext_output -dont_show -out result.json [</test.txt]`
     /home/naip/IOC/yolo_tiny/darknet/data/IOC/test/13067.png: Predicted in 4.770000 milli-seconds.
     2: 52%  (left_x:  115   top_y:   14   width:   13   height:   18)
     2: 56%  (left_x:  125   top_y:   14   width:   12   height:   18)
@@ -101,4 +105,5 @@ So, I load the test image size to calculate the (y1, x1, y2, x2) as (top , left,
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW2_Digits%20detection/Images/speed.png) <br> 
 
 ## Make-Submission
-Submit the file `StudentID.csv`, to the google drive and  get the mPA scroe from TA. <br>
+Use the `create_josn.py` to get the final file. 
+Submit the file `StudentID.json`, to the google drive and  get the mPA scroe from TA. <br>
