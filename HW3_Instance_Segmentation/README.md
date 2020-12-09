@@ -24,7 +24,7 @@ Using Anaconda and pytorch to implement this method.
     git clone https://github.com/dbolya/yolact.git
 
 ## Architecture
-###Detectron2
+#### Detectron2
 
 
 ## Implement
@@ -66,7 +66,7 @@ Submit the file `StudentID.json`, to the google drive and  get the mPA scroe fro
 
 
 ## Reference
-### Detectron2
+#### Detectron2
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2.PNG) <br>     
-### YOLACT
+#### YOLACT
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT.PNG) <br>     
