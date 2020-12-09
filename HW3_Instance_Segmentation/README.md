@@ -25,6 +25,7 @@ Using Anaconda and pytorch to implement this method.
 
 ## Architecture
 #### Detectron2
+#### YOLACT
 
 
 ## Implement
@@ -36,19 +37,19 @@ The code is programing on
     CUDA 11.0
     cuDNN v8.0.5.
  
-* Hyperparameters * 
-### Detectron2
+*Hyperparameters* 
+#### Detectron2
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Hyperparameters.PNG)
-###YOLACT
-* Hyperparameters * 
+#### YOLACT
+*Hyperparameters* 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT_Hyperparameters.PNG)    
 
 
 ## Testing
 After the initial training in order to find the best pretrained model for each method
-### Detectron2
+#### Detectron2
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Performance.PNG) <br> 
-### YOLACT
+#### YOLACT
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT_Performance.PNG) <br> 
 
 
