@@ -37,22 +37,28 @@ The code is programing on
     CUDA 11.0
     cuDNN v8.0.5.
  
+#### Detectron2 (The pretrained model must be made by ImageNet)
+Put the pretrained model in the `train.py` download from https://github.com/facebookresearch/detectron2/blob/master/MODEL_ZOO.md?fbclid=IwAR16iSEh72483X0q6DZaTqGYtwxjFZXuSOKLo5LS2Vzgha-umDwnSTG0Cns <br> 
+Change the training data's path where you put the training data <br> 
 *Hyperparameters* <br> 
-#### Detectron2
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Hyperparameters.PNG) <br> 
-#### YOLACT
+#### YOLACT (The pretrained model must be made by ImageNet)
+Put the pretrained model in the `train.py` download from https://github.com/dbolya/yolact <br> 
+Change the training data's path where you put the training data <br> 
 *Hyperparameters* <br> 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT_Hyperparameters.PNG) <br>    
 
 
 ## Testing
-After the initial training in order to find the best pretrained model for each method
+After the initial training in order to find the best pretrained model for each method.
+Load the TA's program `utils_HW3.py` in the `test.py` to get the submission file.
 #### Detectron2
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Performance.PNG) <br> 
 #### YOLACT
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT_Performance.PNG) <br> 
 
-
+Choose the best performance pretrained model in each method and to do training for several epoch. <br>
+Get the final mAP score for each method.
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Final_Performance.PNG) <br> 
 
 
@@ -67,7 +73,7 @@ Submit the file `StudentID.json`, to the google drive and  get the mPA scroe fro
 
 
 ## Reference
-#### Detectron2
+#### Detectron2 (https://github.com/facebookresearch/detectron2)
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2.PNG) <br>     
-#### YOLACT
+#### YOLACT (https://github.com/dbolya/yolact)
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT.PNG) <br>     
