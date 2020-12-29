@@ -25,8 +25,10 @@ Using Anaconda and pytorch to implement this method.
 
 ## Architecture
 #### Detectron2
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Architecture1.PNG) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Architecture2.PNG) <br> 
 #### YOLACT
-
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT_Architecture.PNG) <br> 
 
 ## Implement
 The code is programing on 
@@ -63,6 +65,7 @@ Get the final mAP score for each method.
 
 
 ## Results
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Result2.PNG) <br> 
 ### Prediction 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Result.PNG) <br>     
 
