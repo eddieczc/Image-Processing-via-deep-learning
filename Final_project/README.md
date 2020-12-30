@@ -26,14 +26,22 @@ Using Anaconda and pytorch to implement this method.
     pip install -r requirements.txt
     
 
-## Dataloader
-Change the path which is in the `dataloader.py` and `main.py`.
-    
-    pd.read_csv('./training_labels.csv')
-    train_dataset = RetinopathyLoader('./training_data', 'train', augmentation=augmentation)
-Validation and testing data are ues the same method to load <br>
+## Datatrans
+Change the path which is in the `datatrans.py`. <br>   
+    pd.read_csv('./train.csv')
+Use the `datatrans.py` to get the `original_train.csv`<br>
+This file is more convenient for training. <br>
 
 ## Method
+    python train.py
+If you want to read the model for training, please remove the annotation of the main program and change the path <br> 
+    # Initialize mode and load trained weights
+    #ckpt_path = "./model/model34.pth"
+    #device = torch.device("cuda")
+
+    #state = torch.load(ckpt_path, map_location=lambda storage, loc: storage)
+    #model.load_state_dict(state["state_dict"])    
+    
 ### Architecture
 #### UNET
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/UNET.png) <br> 
@@ -41,11 +49,11 @@ Validation and testing data are ues the same method to load <br>
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/layer.PNG) <br> 
 #### Efficientnet 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/eff_1.png) <br> 
+Refer to the github：https://github.com/lukemelas/EfficientNet-PyTorch <br>
 #### D-LinkNet plus the conv1
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/over.PNG) <br> 
 ##### The details of D-LinkNet
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/details.png) <br> 
-
 Refer to the github：https://github.com/khornlund/severstal-steel-defect-detection <br>
 
 ### Data_augmentation
@@ -88,12 +96,11 @@ Refer to the github：https://github.com/khornlund/severstal-steel-defect-detect
 
 ## result
 Using this code to do the testing. <br>
-
     python test.py
-####Our group’s results
-![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res.png) <br> 
+#### Our group’s results
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res.PNG) <br> 
 
-####Score ranking in the Leaderboard
+#### Score ranking in the Leaderboard
 A total of 2431 teams participated in this competition. After comparing the values on the leaderboard, our results are about 2% of the total.<br> 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res_2.png) <br> 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res_1.png) <br> 
