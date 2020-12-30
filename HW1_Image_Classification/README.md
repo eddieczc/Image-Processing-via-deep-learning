@@ -1,6 +1,6 @@
 # CS_T0828_HW1
 link：https://www.kaggle.com/c/cs-t0828-2020-hw1 <br>
-code for the fifth accuracy in Kaggle Car Brand Classification Challenge.
+code for the fifth accuracy in Kaggle Severstal: Steel Defect Detection Challenge.
 
 ## Hardware
 ● Windows 10 <br>
@@ -8,13 +8,14 @@ code for the fifth accuracy in Kaggle Car Brand Classification Challenge.
 ● NVIDIA GeForce GTX 1080 Ti <br>
 
 ## Introduction and details
-There is the outlines in this compitions <br>
+There is the outlines in this competition <br>
 1. [Installation](#Installation) <br>
-2. [dataloader](#dataloader) <br>
-3. [Model](#Model) <br>
-4. [Load-Model](#Load-Model) <br>
-5. [testing](#testing) <br>
-6. [Make-Submission](#Make-Submission)<br>
+2. [Dataloader](#Dataloader) <br>
+3. [Method](#Model) <br>
+4. [experiment](#experiment) <br>
+5. [result](#result) <br>
+6. [Make-Submission](#Make-Submission) <br>
+7. [Reference](#Reference) <br>
 
 ## Installation
 Using Anaconda and pytorch to implement this method.
