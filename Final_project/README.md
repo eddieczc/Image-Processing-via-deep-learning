@@ -89,10 +89,18 @@ Refer to the github：https://github.com/khornlund/severstal-steel-defect-detect
 ## result
 Using this code to do the testing. <br>
 
-    validation_correct, y_truth, y_predict = evalModels(models,'test', validation_loader = DataLoader(test_dataset, batch_size=8), return_predict_y=True)
-    
+    python test.py
+####Our group’s results
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res.png) <br> 
+
+####Score ranking in the Leaderboard
+A total of 2431 teams participated in this competition. After comparing the values on the leaderboard, our results are about 2% of the total.<br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res_2.png) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res_1.png) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res_3.png) <br> 
+
 ## Make-Submission
-Submit the file `pred.csv`, to the kaggle  get the testing accuracy <br>
+Submit the file `submission.csv`, to the kaggle  get the testing accuracy <br>
 
 ## Reference
 [1] H. Noh, S. Hong and B. Han, "Learning Deconvolution Network for Semantic Segmentation," 2015 IEEE International Conference on Computer Vision (ICCV), Santiago, 2015, pp. 1520-1528, doi: 10.1109/ICCV.2015.178.<br> 
