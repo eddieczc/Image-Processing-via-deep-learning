@@ -10,8 +10,8 @@ code for the 2% accuracy in Kaggle Severstal: Steel Defect Detection Challenge.
 ## Introduction and details
 There is the outlines in this competition <br>
 1. [Installation](#Installation) <br>
-2. [Dataloader](#Dataloader) <br>
-3. [Method](#Model) <br>
+2. [Datatrans](#Datatrans) <br>
+3. [Method](#Method) <br>
 4. [experiment](#experiment) <br>
 5. [result](#result) <br>
 6. [Make-Submission](#Make-Submission) <br>
