@@ -35,7 +35,8 @@ This file is more convenient for training. <br>
 ## Method
     python train.py
 If you want to read the model for training, please remove the annotation of the main program and change the path <br> 
-    # Initialize mode and load trained weights
+    
+    #Initialize mode and load trained weights
     #ckpt_path = "./model/model34.pth"
     #device = torch.device("cuda")
 
@@ -96,7 +97,9 @@ Refer to the github：https://github.com/khornlund/severstal-steel-defect-detect
 
 ## result
 Using this code to do the testing. <br>
+
     python test.py
+    
 #### Our group’s results
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/res.PNG) <br> 
 
