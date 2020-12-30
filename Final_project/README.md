@@ -83,5 +83,7 @@ Submit the file `pred.csv`, to the kaggle  get the testing accuracy <br>
 [5] SIMONYAN, Karen; ZISSERMAN, Andrew. Very deep convolutional networks for large-scale image recognition. arXiv preprint arXiv:1409.1556, 2014.<br> 
 
 [6] L. Zhou, C. Zhang and M. Wu, "D-LinkNet: LinkNet with Pretrained Encoder and Dilated Convolution for High Resolution Satellite Imagery Road Extraction," 2018 IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops (CVPRW), Salt Lake City, UT, 2018, pp. 192-1924, doi: 10.1109/CVPRW.2018.00034.<br> 
+
 [7] Reference codel：https://github.com/khornlund/severstal-steel-defect-detection <br> 
+
 [8] Kaggle’s competition：https://www.kaggle.com/c/severstal-steel-defect-detection <br> 
