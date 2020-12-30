@@ -11,11 +11,10 @@ code for the fifth accuracy in Kaggle Severstal: Steel Defect Detection Challeng
 There is the outlines in this competition <br>
 1. [Installation](#Installation) <br>
 2. [Dataloader](#Dataloader) <br>
-3. [Method](#Model) <br>
-4. [experiment](#experiment) <br>
-5. [result](#result) <br>
+3. [Model](#Model) <br>
+4. [Load-Model](#Load-Model) <br>
+5. [testing](#testing) <br>
 6. [Make-Submission](#Make-Submission) <br>
-7. [Reference](#Reference) <br>
 
 ## Installation
 Using Anaconda and pytorch to implement this method.
