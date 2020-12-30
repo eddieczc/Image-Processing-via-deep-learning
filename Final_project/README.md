@@ -1,7 +1,7 @@
 # Final_project
 link：https://www.kaggle.com/c/severstal-steel-defect-detection <br>
 code for the 2% accuracy in Kaggle Severstal: Steel Defect Detection Challenge.
-
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/example.PNG) <br> 
 ## Hardware
 ● Windows 10 <br>
 ● Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz <br>
@@ -34,11 +34,17 @@ Change the path which is in the `dataloader.py` and `main.py`.
 Validation and testing data are ues the same method to load <br>
 
 ## Method
-Taking the pretrained model for desent121 <br>
-densenet121_pretrained = torchvision.models.__dict__['densenet{}'.format(121)](pretrained=True)
-If you want to change the deeper model, you can change the model name or the num of `.format(121).`
-You can try the efficientnet with the pretrained b-7, though it costs many memory, the performance is better than densenet.
-
+### Architecture
+#### UNET
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/UNET.png) <br> 
+##### The details of U-net
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/layer.PNG) <br> 
+#### Efficientnet 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/eff_1.png) <br> 
+#### D-LinkNet plus the conv1
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/over.PNG) <br> 
+##### The details of D-LinkNet
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/details.png) <br> 
 
 Refer to the github：https://github.com/khornlund/severstal-steel-defect-detection <br>
 
@@ -51,17 +57,34 @@ Refer to the github：https://github.com/khornlund/severstal-steel-defect-detect
      transforms.RandomResizedCrop(224),
      transforms.RandomHorizontalFlip()
 
+### Loss function
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/loss.PNG) <br> 
 
-### Optimizer
-
-         
-                        
+                           
 ## experiment
-After processing every epoch, you need to save the model, in oder to avoid the model breaking. <br>   
-You can load model as the code： 
-
-    densenet121_pretrained_model = densenet121_pretrained.to(device)
-    densenet121_pretrained_model.load_state_dict(torch.load('model.pkl'))
+### Number of training materials
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/dataset.PNG) <br> 
+### The Training data analysis
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/dataset_3.png) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/dataset_4.png) <br> 
+### Comparison with different method
+#### Comparison of using different architectures
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/table_1.png) <br> 
+#### With/without Conv1 and Data augmentation
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/table_2.png) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/table_3.png) <br> 
+#### Comparison of using different loss function
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/table_4.png) <br> 
+##### The Loss plot
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/bceloss.png) <br> 
+##### The IoU Score plot
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/IOU.png) <br> 
+#### Comparison of using different optimizer
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/table_5.png) <br> 
+##### Optimizer’s comparison ( SGD and Adam )
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/table_6.png) <br> 
+### Ablation studies
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/Final_project/images/ablation.png) <br> 
 
 ## result
 Using this code to do the testing. <br>
