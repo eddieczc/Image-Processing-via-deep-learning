@@ -59,10 +59,13 @@ During meta-transfer learning, the external dataset is used, where internal lear
 ## Implement
 This homework prohibits all pre-trained models and other training data.<br>
 The code for `VDSR`and `RFSR` are programing on <br>
+
     Windows 10 <br>
     Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz <br>
     NVIDIA GeForce GTX 1080 Ti <br>
+    
 The code for `SRGAN`,`SRResNet`,`ESRGAN`,`EDSR` and `MZSR` are programing on <br> 
+
     Ubuntu 20.04
     python 3.6
     Nvidia GeForce 1080Ti 
