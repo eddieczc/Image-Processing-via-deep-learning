@@ -98,7 +98,8 @@ Make sure all configurations in config.py are set.<br>
 
     python main.py --train --gpu [GPU_number] --trial [Trial of your training] --step [Global step]
     
-![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/process.png) <br>     
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/process.png) <br> 
+
 ## Testing
 
 ### VDSR：<br>
@@ -114,7 +115,9 @@ Simply launch a jupyter notebook instance and open the notebook. <br>
 
 ### SRGAN,SRResNet,ESRGAN,EDSR and MZSR：<br>
 First, use `create_lr_images.py` to get the LR images.<br>
+
     img_or.resize((int(w/3), int(h/3)),Image.BICUBIC)
+    
 The code for `SRGAN`,`SRResNet`,`ESRGAN` and `EDSR` using the folder `BasicSR`  <br> 
     cd BasicSR
 Then, choose the model you want to test.<br>
