@@ -87,6 +87,7 @@ The code for `SRGAN`,`SRResNet`,`ESRGAN` and `EDSR` using the folder `BasicSR`  
     cd BasicSR
     pip install -r requirements.txt
 Then, choose the model you want to train.<br>
+
     python basicsr/train.py -opt options/train/SRGAN/train_SRGAN_x3.yml
     python basicsr/train.py -opt options/train/SRResNet_SRGAN/train_MSRResNet_x3.yml
     python basicsr/train.py -opt options/train/ESRGAN/train_ESRGAN_x3.yml
@@ -115,10 +116,12 @@ First, use `create_lr_images.py` to get the LR images.<br>
 The code for `SRGAN`,`SRResNet`,`ESRGAN` and `EDSR` using the folder `BasicSR`  <br> 
     cd BasicSR
 Then, choose the model you want to test.<br>
+
     python basicsr/test.py -opt options/test/SRGAN/test_SRGAN_x3.yml
     python basicsr/test.py -opt options/test/SRResNet_SRGAN/test_MSRResNet_x3.yml
     python basicsr/test.py -opt options/test/ESRGAN/test_ESRGAN_x3.yml
     python basicsr/test.py -opt options/test/EDSR/test_EDSR_Lx3.yml
+    
 Load the model you have already trained in folder experiments and you can get the results in folder results.<br>    
 
 The code for `MZSR` using the folder `MZSR` <br> 
