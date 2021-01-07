@@ -95,7 +95,9 @@ Then, choose the model you want to train.<br>
     
 The code for `MZSR` using the folder `MZSR` <br> 
 Make sure all configurations in config.py are set.<br>
+
     python main.py --train --gpu [GPU_number] --trial [Trial of your training] --step [Global step]
+    
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/process.png) <br>     
 ## Testing
 
@@ -126,6 +128,7 @@ Load the model you have already trained in folder experiments and you can get th
 
 The code for `MZSR` using the folder `MZSR` <br> 
 Make sure all configurations in config.py are set.<br>
+
     python main.py --gpu [GPU_number] --inputpath [LR path] --gtpath [HR path] --savepath [SR path]  --kernelpath [kernel.mat path] --model [0/1/2/3] --num [1/10]
 
 ## Results of each model
