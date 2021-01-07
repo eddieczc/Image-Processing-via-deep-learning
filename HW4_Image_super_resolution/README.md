@@ -138,7 +138,7 @@ Make sure all configurations in config.py are set.<br>
 
 ## Results of each model
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/table1.PNG) <br> 
-### PSNR and the tesults 
+### PSNR and the esults 
 ![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/table2.PNG) <br>     
 
 
