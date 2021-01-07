@@ -134,7 +134,7 @@ Make sure all configurations in config.py are set.<br>
 ## Make-Submission
 Put the 3x upscaling image into the folder which is created by TAs in google drive.  <br>
 Getting the PSNR scroe from TA. <br>
-
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/final.PNG) <br>     
 
 ## Reference
 [1] C. Ledig et al., "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network," 2017 IEEE Conference on Computer Vision and Pattern Recognition (CVPR), Honolulu, HI, 2017, pp. 105-114, doi: 10.1109/CVPR.2017.19.<br> 
