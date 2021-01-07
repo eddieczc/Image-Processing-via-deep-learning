@@ -82,7 +82,9 @@ Simply launch a jupyter notebook instance and open the notebook. <br>
 
 ### SRGAN,SRResNet,ESRGAN,EDSR and MZSR：<br>
 First, use `create_lr_images.py` to get the LR images.<br>
+
     img_or.resize((int(w/3), int(h/3)),Image.BICUBIC)
+    
 The code for `SRGAN`,`SRResNet`,`ESRGAN` and `EDSR` using the folder `BasicSR`  <br> 
     cd BasicSR
     pip install -r requirements.txt
