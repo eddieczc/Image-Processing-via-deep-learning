@@ -1,0 +1,47 @@
+name: EDSR_Lx3v10
+model_type: SRModel
+scale: 3
+num_gpu: 1  # set num_gpu: 0 for cpu mode
+manual_seed: 0
+
+datasets:
+  test_1:  # the 1st test dataset
+    name: HW4_test
+    type: PairedImageDataset
+    dataroot_gt: datasets/testing_lr_images_gt
+    dataroot_lq: datasets/testing_lr_images
+    io_backend:
+      type: disk
+
+
+# network structures
+network_g:
+  type: EDSR
+  num_in_ch: 3
+  num_out_ch: 3
+  num_feat: 256
+  num_block: 32
+  upscale: 3
+  res_scale: 0.1
+  img_range: 255.
+  rgb_mean: [0.4488, 0.4371, 0.4040]
+
+# path
+path:
+  pretrain_network_g: ./experiments/205_EDSR_Lx3v11/models/net_g_latest.pth
+  strict_load_g: true
+
+# validation settings
+val:
+  save_img: true
+  suffix: ~ 
+
+  metrics:
+    psnr: # metric name, can be arbitrary
+      type: calculate_psnr
+      crop_border: 3
+      test_y_channel: false
+    ssim:
+      type: calculate_ssim
+      crop_border: 3
+      test_y_channel: false
