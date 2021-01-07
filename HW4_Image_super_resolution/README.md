@@ -61,8 +61,8 @@ This homework prohibits all pre-trained models and other training data.<br>
 The code for `VDSR`and `RFSR` are programing on <br>
 
     Windows 10 <br>
-    Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz <br>
-    NVIDIA GeForce GTX 1080 Ti <br>
+    Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz
+    NVIDIA GeForce GTX 1080 Ti
     
 The code for `SRGAN`,`SRResNet`,`ESRGAN`,`EDSR` and `MZSR` are programing on <br> 
 
