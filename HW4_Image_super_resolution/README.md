@@ -1,7 +1,11 @@
-# CS_T0828_HW3
-code for the fifth accuracy in Instance Segmentation Challenge. <br>
+# CS_T0828_HW4
+code for the first psnr in  Image super resolution Challenge. <br>
 
 ## Hardware
+● Windows 10 <br>
+● Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz <br>
+● NVIDIA GeForce GTX 1080 Ti <br>
+and <br>
 ● Ubuntu 20.04 <br>
 ● Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz <br>
 ● NVIDIA GeForce GTX 1080 Ti <br>
@@ -24,15 +28,30 @@ Using Anaconda and pytorch to implement this method.
     git clone https://github.com/dbolya/yolact.git
 
 ## Architecture
-#### Detectron2
-![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Architecture1.PNG) <br> 
-![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/Detectron2_Architecture2.PNG) <br> 
-#### YOLACT
-![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW3_Instance_Segmentation/Images/YOLACT_Architecture.PNG) <br> 
+#### SRGAN
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/SRGAN1.png) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/SRGAN2.png) <br> 
+#### SRResNet
+#### ESRGAN
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/ESRGAN.png) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/ESRGAN2.png) <br> 
+#### EDSR
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/EDSR.png) <br> 
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/EDSR2.png) <br> 
+#### VDSR
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/VDSR.png) <br> 
+#### RFSR
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/RFSR.png) <br> 
+#### MZSR
+![image](https://github.com/eddieczc/Image-Processing-via-deep-learning/blob/master/HW4_Image_super_resolution/Images/MZSR.png) <br> 
+
 
 ## Implement
-The code is programing on 
-
+The code for `VDSR`and `RFSR` are programing on <br>
+    Windows 10 <br>
+    Intel(R) Xeon(R) W-2125 CPU @ 4.00GHz <br>
+    NVIDIA GeForce GTX 1080 Ti <br>
+The code for `SRGAN`,`SRResNet`,`ESRGAN` and `MZSR` are programing on <br> 
     Ubuntu 20.04
     python 3.6
     Nvidia GeForce 1080Ti 
